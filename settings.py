@@ -78,6 +78,13 @@ def settings(setting, value):
     global pycolor2
     global powerups
     global active
+    c = tk.Button()
+    d = tk.Label()
+    e = tk.Label()
+    f = tk.Label()
+    g = tk.Label()
+    h = tk.Button()
+    i = tk.Button()
     # Changing Snake Speed
     if setting == 0:
         snake_speed = value
@@ -87,7 +94,7 @@ def settings(setting, value):
     # Changing Steering Buttons
     elif setting == 2:
         Button = value
-    # Color channging for Button and snake for each player
+    # Color changing for Button and snake for each player
     elif setting == 3:
         color = random.choice(colors.colors)
         color2 = random.choice(colors.colors)
