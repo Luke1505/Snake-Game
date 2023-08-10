@@ -6,7 +6,8 @@ from operator import itemgetter
 
 def save(highscores):
     with open('scoreboard.json', 'w') as file:
-        json.dump(highscores, file)  # save highscores to json file
+        # save highscores to json file and format it nicely like this [name, score],\n[name, score] etc.
+        json.dump(highscores, file, indent=4)
 
 
 # Load the highscores
